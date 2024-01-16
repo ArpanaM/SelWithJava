@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\2023\Sel@9AM(IST)\workspace\SelWithJava\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.CompareWebTblData" class="method navigator-link" hash-for-method="compareData">compareData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.Yahoo" class="method navigator-link" hash-for-method="loginRediff">loginRediff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.Yahoo" class="method navigator-link" hash-for-method="closeRediff">closeRediff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.DP_Exp" class="method navigator-link" hash-for-method="dispData(pooja, pooja111)">dispData(pooja, pooja111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.DP_Exp" class="method navigator-link" hash-for-method="dispData(riya, riya111)">dispData(riya, riya111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.DP_Exp" class="method navigator-link" hash-for-method="dispData(tani, tani111)">dispData(tani, tani111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.Yahoo" class="method navigator-link" hash-for-method="launchRediff">launchRediff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.ThruExcel" class="method navigator-link" hash-for-method="loginYahoo(pooja, pooja123)">loginYahoo(pooja, pooja123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.ThruExcel" class="method navigator-link" hash-for-method="loginYahoo(riya, riya123)">loginYahoo(riya, riya123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.ThruExcel" class="method navigator-link" hash-for-method="loginYahoo(diya, diya123)">loginYahoo(diya, diya123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.ThruExcel" class="method navigator-link" hash-for-method="loginYahoo(jack, jack123)">loginYahoo(jack, jack123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.CompareWebTblData" class="method navigator-link" hash-for-method="readFrmTable">readFrmTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.ThruTextFile" class="method navigator-link" hash-for-method="readFrmTxtFile">readFrmTxtFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.CompareWebTblData" class="method navigator-link" hash-for-method="readFrmTxtFile">readFrmTxtFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGLearning.ReadFrmWebTbl" class="method navigator-link" hash-for-method="readFrmWebTable">readFrmWebTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testNGLearning.CompareWebTblData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareData">
+                  </a> <!-- compareData -->
+                  <span class="method-name">compareData</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [This is my First Line] but found [Alfreds Futterkiste]
+	at testNGLearning.CompareWebTblData.compareData(CompareWebTblData.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testNGLearning.Yahoo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginRediff">
+                  </a> <!-- loginRediff -->
+                  <span class="method-name">loginRediff</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Yahoo123] but found [Yahoo]
+	at testNGLearning.Yahoo.loginRediff(Yahoo.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login-Soft Assert)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNGLearning.ThruTextFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="readFrmTxtFile">
+                  </a> <!-- readFrmTxtFile -->
+                  <span class="method-name">readFrmTxtFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNGLearning.ThruExcel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginYahoo(pooja, pooja123)">
+                  </a> <!-- loginYahoo(pooja, pooja123) -->
+                  <span class="method-name">loginYahoo</span>
+                  <span class="parameters">(pooja, pooja123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginYahoo(riya, riya123)">
+                  </a> <!-- loginYahoo(riya, riya123) -->
+                  <span class="method-name">loginYahoo</span>
+                  <span class="parameters">(riya, riya123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginYahoo(diya, diya123)">
+                  </a> <!-- loginYahoo(diya, diya123) -->
+                  <span class="method-name">loginYahoo</span>
+                  <span class="parameters">(diya, diya123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginYahoo(jack, jack123)">
+                  </a> <!-- loginYahoo(jack, jack123) -->
+                  <span class="method-name">loginYahoo</span>
+                  <span class="parameters">(jack, jack123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNGLearning.ReadFrmWebTbl</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="readFrmWebTable">
+                  </a> <!-- readFrmWebTable -->
+                  <span class="method-name">readFrmWebTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNGLearning.DP_Exp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dispData(pooja, pooja111)">
+                  </a> <!-- dispData(pooja, pooja111) -->
+                  <span class="method-name">dispData</span>
+                  <span class="parameters">(pooja, pooja111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dispData(riya, riya111)">
+                  </a> <!-- dispData(riya, riya111) -->
+                  <span class="method-name">dispData</span>
+                  <span class="parameters">(riya, riya111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dispData(tani, tani111)">
+                  </a> <!-- dispData(tani, tani111) -->
+                  <span class="method-name">dispData</span>
+                  <span class="parameters">(tani, tani111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNGLearning.CompareWebTblData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="readFrmTable">
+                  </a> <!-- readFrmTable -->
+                  <span class="method-name">readFrmTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readFrmTxtFile">
+                  </a> <!-- readFrmTxtFile -->
+                  <span class="method-name">readFrmTxtFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNGLearning.Yahoo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeRediff">
+                  </a> <!-- closeRediff -->
+                  <span class="method-name">closeRediff</span>
+                  <em>
+(Close)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchRediff">
+                  </a> <!-- launchRediff -->
+                  <span class="method-name">launchRediff</span>
+                  <em>
+(Launch)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\2023\Sel@9AM(IST)\workspace\SelWithJava\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;list.TestNGListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testNGLearning.Yahoo&quot;/&gt;
+      &lt;class name=&quot;testNGLearning.ReadFrmWebTbl&quot;/&gt;
+      &lt;class name=&quot;testNGLearning.DP_Exp&quot;/&gt;
+      &lt;class name=&quot;testNGLearning.ThruExcel&quot;/&gt;
+      &lt;class name=&quot;testNGLearning.ThruTextFile&quot;/&gt;
+      &lt;class name=&quot;testNGLearning.CompareWebTblData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'launchRediff')
+data.setCell(0, 2, 'testNGLearning.Yahoo')
+data.setCell(0, 3, 23004);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'readFrmWebTable')
+data.setCell(1, 2, 'testNGLearning.ReadFrmWebTbl')
+data.setCell(1, 3, 20361);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'readFrmTable')
+data.setCell(2, 2, 'testNGLearning.CompareWebTblData')
+data.setCell(2, 3, 9811);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'closeRediff')
+data.setCell(3, 2, 'testNGLearning.Yahoo')
+data.setCell(3, 3, 567);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginRediff')
+data.setCell(4, 2, 'testNGLearning.Yahoo')
+data.setCell(4, 3, 25);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'readFrmTxtFile')
+data.setCell(5, 2, 'testNGLearning.ThruTextFile')
+data.setCell(5, 3, 14);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'dispData')
+data.setCell(6, 2, 'testNGLearning.DP_Exp')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'compareData')
+data.setCell(7, 2, 'testNGLearning.CompareWebTblData')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginYahoo')
+data.setCell(8, 2, 'testNGLearning.ThruExcel')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'dispData')
+data.setCell(9, 2, 'testNGLearning.DP_Exp')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginYahoo')
+data.setCell(10, 2, 'testNGLearning.ThruExcel')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginYahoo')
+data.setCell(11, 2, 'testNGLearning.ThruExcel')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginYahoo')
+data.setCell(12, 2, 'testNGLearning.ThruExcel')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'readFrmTxtFile')
+data.setCell(13, 2, 'testNGLearning.CompareWebTblData')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'dispData')
+data.setCell(14, 2, 'testNGLearning.DP_Exp')
+data.setCell(14, 3, 1);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginYahoo(pooja, pooja123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..loginYahoo</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">dispData(pooja, pooja111)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..dispData</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">readFrmWebTable</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..readFrmWebTable</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginYahoo(riya, riya123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..loginYahoo</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">readFrmTxtFile</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..readFrmTxtFile</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginYahoo(diya, diya123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..loginYahoo</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">readFrmTable</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..readFrmTable</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">launchRediff</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..launchRediff</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginYahoo(jack, jack123)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..loginYahoo</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">dispData(riya, riya111)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..dispData</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">readFrmTxtFile</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..readFrmTxtFile</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">dispData(tani, tani111)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..dispData</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">closeRediff</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Passed..closeRediff</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">compareData</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Failed..compareData</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginRediff</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test is Failed..loginRediff</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testNGLearning.Yahoo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginRediff1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGLearning.Yahoo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">launchRediff</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginRediff</span>
+                <span class="method-start">23018 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeRediff</span>
+                <span class="method-start">23055 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGLearning.ReadFrmWebTbl</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">readFrmWebTable</span>
+                <span class="method-start">23626 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGLearning.DP_Exp</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dispData(tani, tani111)</span>
+                <span class="method-start">43998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dispData(riya, riya111)</span>
+                <span class="method-start">44002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dispData(pooja, pooja111)</span>
+                <span class="method-start">44008 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGLearning.ThruExcel</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginYahoo(jack, jack123)</span>
+                <span class="method-start">45743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginYahoo(diya, diya123)</span>
+                <span class="method-start">45746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginYahoo(pooja, pooja123)</span>
+                <span class="method-start">45748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginYahoo(riya, riya123)</span>
+                <span class="method-start">45751 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGLearning.ThruTextFile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">readFrmTxtFile</span>
+                <span class="method-start">45758 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNGLearning.CompareWebTblData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">readFrmTable</span>
+                <span class="method-start">45779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">readFrmTxtFile</span>
+                <span class="method-start">55591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareData</span>
+                <span class="method-start">55597 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
